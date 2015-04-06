@@ -1,0 +1,2 @@
+# Custom Propmt
+export PS1="\w ☞  "

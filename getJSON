@@ -1,0 +1,4 @@
+function getJSON(){
+	curl -s "$1" | python -m json.tool
+}
+alias getJSON=getJSON

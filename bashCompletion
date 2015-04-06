@@ -1,0 +1,12 @@
+# Add Bash Completion
+bashCompletionDir="/opt/local"
+
+if [[ "$(uname)"="Darwin" ]]; then
+    bashCompletionDir=$(brew --prefix)
+fi
+
+if [ -f $bashCompletionDir/etc/bash_completion ]; then
+    . $bashCompletionDir/etc/bash_completion
+else
+    echo "please install bash completion: https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion"
+fi
